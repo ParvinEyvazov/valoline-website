@@ -13,29 +13,27 @@
       height: 99vh;
       object-fit: cover;
     }
-
-    .overlay {
-      top: 0;
-      position: absolute;
-      width: 100%;
-      height: 99vh;
-      background-color: var(--overlay-color);
-    }
   }
 
   .information-container {
+    background-color: var(--overlay-color);
     width: 100%;
     height: 99vh;
-    // background-color: rgba(0, 0, 255, 0.288);
     top: 0;
     position: absolute;
+
+    .btn__content {
+      font-family: var(--font-regular);
+    }
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .title {
-      margin-top: 50px;
+      font-family: var(--font-primary-valorant);
+      font-size: var(--font-size-large);
+      margin-top: 150px;
       color: white;
     }
 
@@ -47,6 +45,7 @@
 
       .version {
         color: white;
+        font-family: var(--font-regular);
       }
     }
   }

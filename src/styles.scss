@@ -1,5 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: "VALORANT";
+  font-style: normal;
+  font-weight: 400;
+  src: local("VALORANT"), url("assets/fonts/Valorant\ Font.woff") format("woff");
+}
+
+// @font-face {
+//   font-family: "POPPINS";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local("VALORANT"), url("assets/fonts/Valorant\ Font.woff") format("woff");
+// }
+
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   margin: 0;
@@ -9,13 +31,10 @@ body {
 
 :root {
   // colors
-  --primary-color: #7b77ff;
   --overlay-color: rgba(0, 0, 0, 0.5);
 
-  // border radius
-  --border-radius-sharp: 10px;
-
-  //shadows
-  --box-below-shadow: rgba(255, 0, 0, 0) 0px 1px 1px 0px inset,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  // font
+  --font-primary-valorant: "VALORANT";
+  --font-regular: "Regular";
+  --font-size-large: 12vw;
 }
