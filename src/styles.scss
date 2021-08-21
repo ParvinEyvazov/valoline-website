@@ -26,7 +26,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 :root {
@@ -37,4 +37,5 @@ body {
   --font-primary-valorant: "VALORANT";
   --font-regular: "Regular";
   --font-size-large: 12vw;
+  --font-size-version: 12vw;
 }
