@@ -1,3 +1,5 @@
+<div class="loading"></div>
+
 <div class="container">
   <div class="image-container">
     <img
@@ -12,14 +14,14 @@
 
     <div class="download-button">
       <!-- btn--light -->
-      <button class="btn" onclick="changeStatus(`online`)">
+      <button class="btn" (click)="downloadFile(download_url)">
         <span class="btn__inner">
           <span class="btn__slide"></span>
           <span class="btn__content">Download</span>
         </span>
       </button>
 
-      <span class="version">latest version: 1.0.0</span>
+      <span class="version">latest: {{ tag_name }}</span>
     </div>
     <!--  -->
   </div>

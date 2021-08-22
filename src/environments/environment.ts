@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  releases_url: 'https://api.github.com/repos/ParvinEyvazov/valoline/releases',
 };
 
 /*
