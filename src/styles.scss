@@ -1,18 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/styles/valorant-button.scss";
+@import "./app/styles/wave.scss";
 
+/* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "VALORANT";
   font-style: normal;
   font-weight: 400;
   src: local("VALORANT"), url("assets/fonts/Valorant\ Font.woff") format("woff");
 }
-
-// @font-face {
-//   font-family: "POPPINS";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local("VALORANT"), url("assets/fonts/Valorant\ Font.woff") format("woff");
-// }
 
 @font-face {
   font-family: "Regular";
