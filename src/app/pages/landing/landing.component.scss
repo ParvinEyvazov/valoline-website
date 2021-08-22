@@ -1,52 +1,62 @@
 :host {
-  .container {
-    position: relative;
-    background-color: black;
-    padding: 0;
-  }
-
-  .image-container {
-    position: relative;
-
-    .image {
-      width: 100%;
-      height: 99vh;
-      object-fit: cover;
-    }
-  }
-
-  .information-container {
+  .loading-container {
     background-color: var(--overlay-color);
     width: 100%;
     height: 99vh;
     top: 0;
-    position: absolute;
-
-    .btn__content {
-      font-family: var(--font-regular);
-    }
-
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
 
-    .title {
-      font-family: var(--font-primary-valorant);
-      font-size: var(--font-size-large);
-      margin-top: 150px;
-      color: white;
+  .container {
+    position: relative;
+    background-color: black;
+    padding: 0;
+
+    .image-container {
+      position: relative;
+
+      .image {
+        width: 100%;
+        height: 99vh;
+        object-fit: cover;
+      }
     }
 
-    .download-button {
+    .information-container {
+      background-color: var(--overlay-color);
+      width: 100%;
+      height: 99vh;
+      top: 0;
+      position: absolute;
+
+      .btn__content {
+        font-family: var(--font-regular);
+      }
+
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: auto;
 
-      .version {
-        font-size: var(--font-size-version);
+      .title {
+        font-family: var(--font-primary-valorant);
+        font-size: var(--font-size-large);
+        margin-top: 150px;
         color: white;
-        font-family: var(--font-regular);
+      }
+
+      .download-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        .version {
+          font-size: var(--font-size-version);
+          color: white;
+          font-family: var(--font-regular);
+        }
       }
     }
   }

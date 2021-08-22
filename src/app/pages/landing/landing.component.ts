@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from 'src/app/services/github/github.service';
+import { fadeAnimation } from 'src/app/styles/animations/fade.animation';
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
+  animations: [fadeAnimation],
 })
 export class LandingComponent implements OnInit {
   constructor(private githubService: GithubService) {}
@@ -13,6 +15,8 @@ export class LandingComponent implements OnInit {
   number_of_images = 29;
   tag_name: string = '';
   download_url: string = '';
+
+  file_ready: boolean = false;
 
   ngOnInit(): void {
     this.setBackgroundImage();
@@ -38,8 +42,11 @@ export class LandingComponent implements OnInit {
 
     let asset = this.search('Valoline.exe', assets);
     this.download_url = asset.browser_download_url;
-
     this.tag_name = latest_release['tag_name'];
+
+    setTimeout(() => {
+      this.file_ready = true;
+    }, 1500);
   }
 
   search(nameKey: any, myArray: any) {

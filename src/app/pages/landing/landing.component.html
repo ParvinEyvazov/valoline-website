@@ -1,6 +1,13 @@
-<div class="loading"></div>
+<div @fadeAnimation class="loading-container" *ngIf="!file_ready">
+  <div class="lds-ellipsis" id="loading" style="opacity: 1">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
 
-<div class="container">
+<div @fadeAnimation class="container" *ngIf="file_ready">
   <div class="image-container">
     <img
       class="image"
@@ -25,6 +32,6 @@
     </div>
     <!--  -->
   </div>
-
-  <div class="wave2"></div>
 </div>
+
+<div class="wave2"></div>
